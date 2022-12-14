@@ -51,7 +51,7 @@ def compare(ar1, ar2):
 
         for v1, v2 in zip(ar1, ar2):  
             com = compare(v1,v2)
-            if com is None:
+            if com is None:  # if both numbers are eq or (lists are the same length and no comparison makes a decision about the order), continue checking next values
                 continue
             else: 
                 return com
